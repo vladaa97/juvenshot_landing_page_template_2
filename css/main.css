@@ -1,0 +1,344 @@
+ /* ========================================  Start global style ============================================ */
+ *{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Arial Hebrew", Arial, sans-serif;
+    color: #707070;
+}
+
+.container-wrapper{
+    width: 100%;
+}
+
+.half-container{
+    width: 50%;
+    float: left;
+}
+
+/* ========================================  End global style ============================================ */
+
+
+/* ========================================  Start Other STYLE ============================================ */
+.subtitle{
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.title {
+    color: #fff;
+    font-size: 2rem;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.paragraph{
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: normal;
+}
+
+.text-over-images{
+    padding: 5% 8% 0;
+    text-align: center;
+}
+
+.image-container{
+    height: 100vh;
+    background: linear-gradient(rgba(72, 142, 194, 0.7), rgba(52, 195, 175, 0.6)), url('../img/Image.png');
+    background-size: cover;
+}
+
+.left-section{
+    position: fixed;
+    float: left;
+}
+
+.right-section{
+    float: right;
+}
+
+.question {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.questions{
+    margin-bottom: 15px;
+}
+
+.form{
+    padding: 5% 10%;
+}
+
+.wizard-step{
+    margin-bottom: 5%;
+}
+
+.form-control{
+    display: block;
+    width: 80%;
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+.form-control:focus{
+    border-color: #1BB49F;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(72, 142, 194, 0.5), 0 0 8px rgba(52, 195, 175, 0.5);
+    box-shadow: inset 0 1px 1px rgba(72, 142, 194, 0.5), 0 0 8px rgba(52, 195, 175, 0.5);
+}
+
+.form-control-width{
+    width: 80%;
+}
+
+.form-control-pol{
+    width: 50%;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.red{
+    color: #ff0000;
+}
+
+.btn{
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    background: #1BB49F;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 20px;
+    line-height: 1;
+    padding: 12px 30px;
+    border: none;
+    color: #fff;
+    float: right;
+    margin-bottom: 10px;
+}
+
+#send_button {
+    display: none;
+}
+
+.count_question{
+    margin-bottom: 10px;
+    display: none;
+}
+
+#MMERGE13,#MMERGE23{
+    display: none;
+}
+
+.dob{
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-grow: 1;
+}
+
+/* ========================================  End Other STYLE ============================================ */
+
+
+/* ========================================  Style radio button ============================================ */
+
+.container-buttom {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.container-buttom input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark-cube{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+
+.container-buttom:hover input ~ .checkmark-cube {
+    background-color: #ccc;
+}
+
+.container-buttom input:checked ~ .checkmark-cube {
+    background-color: #28B4B1;
+}
+
+.checkmark-cube:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-buttom input:checked ~ .checkmark-cube:after {
+    display: block;
+}
+
+.container-buttom .checkmark-cube:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container-buttom:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container-buttom input:checked ~ .checkmark {
+    background-color: #1BB49F;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-buttom input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container-buttom .checkmark:after {
+    top: 9px;
+    left: 8.5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* ========================================  end style radio button ============================================ */
+
+
+
+/* ========================================  Start Scroll bar ============================================ */
+.desktop-progress-container{
+    display: block;
+}
+
+.mobile-progress-container{
+    display: none;
+}
+
+.progress-container {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 3px;
+    background: #ccc;
+}
+
+.progress-bar {
+    height: 3px;
+    background: linear-gradient(to right, blue , violet);
+    width: 0%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+/* ========================================  End Scroll bar ============================================ */
+
+
+/* ========================================  Start Media query ============================================ */
+@media (max-width: 768px) {
+    .desktop-progress-container{
+        display: none;
+    }
+
+    .mobile-progress-container{
+        display: block;
+        position: static;
+        top: auto;
+        margin-bottom: 20px;
+    }
+
+    .half-container{
+        width: 100%;
+    }
+
+    .image-container{
+        height: 60vh;
+    }
+
+    .left-section{
+        position: static;
+    }
+
+    .count_question{
+        display: block;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+    .image-container{
+        position: relative;
+    }
+
+    .text-over-images{
+        bottom: 20%;
+        left: 0%;
+        position: absolute;
+    }
+}
+
+/* ========================================  End Media query ============================================ */
